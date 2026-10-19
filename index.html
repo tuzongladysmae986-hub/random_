@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HOY, IKAW.</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: #f4e9e9;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #352b2e;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 430px;
+            padding: 40px 30px 28px;
+            text-align: center;
+            background: #fffdfb;
+            border: 1px solid #f0dede;
+            border-radius: 22px;
+            box-shadow: 0 15px 45px rgba(80, 48, 55, 0.08);
+        }
+
+        .top-label {
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #a27b84;
+            margin-bottom: 28px;
+        }
+
+        .icon {
+            font-size: 36px;
+            color: #a65f75;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 32px;
+            font-weight: normal;
+            margin-bottom: 14px;
+        }
+
+        .intro {
+            color: #806b70;
+            font-size: 14px;
+            line-height: 1.9;
+            margin-bottom: 26px;
+        }
+
+        button {
+            border: none;
+            border-radius: 30px;
+            padding: 14px 24px;
+            background: #a65f75;
+            color: white;
+            font-size: 13px;
+            cursor: pointer;
+            transition: 0.25s ease;
+        }
+
+        button:hover {
+            background: #87475d;
+            transform: translateY(-2px);
+        }
+
+        #message {
+            display: none;
+            margin-top: 28px;
+            padding-top: 25px;
+            border-top: 1px solid #eadbde;
+            text-align: left;
+            animation: reveal 0.7s ease;
+        }
+
+        #message p {
+            font-size: 14px;
+            line-height: 1.95;
+            color: #625157;
+            margin-bottom: 18px;
+        }
+
+        #message .signature {
+            margin-top: 25px;
+            text-align: center;
+            font-family: Georgia, "Times New Roman", serif;
+            font-style: italic;
+            color: #a65f75;
+            font-size: 13px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 11px;
+            color: #ad939b;
+            letter-spacing: 0.3px;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                padding: 32px 22px 25px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="card">
+
+<p class="intro">
+    uy, andito ka? HAHAHAHAHA<br>
+    chismosa yarn?😔😔 sige may sasabihin aq
+</p>
+
+<button id="revealBtn" onclick="showMessage()">
+    O EDI BASAHIN MO 😔
+</button>
+
+
+       
+<section id="message">
+
+    <p>
+        uy hala chismosa AHAHAHAHAHAHA 
+        anyway, may sasabihin lang aq.
+        <br><br>
+        i like you, actually. matagal na rin,
+        kaso wala naman tayong chance mag-usap masyado.
+        naisip ko lang sabihin dito kasi bakit hindi diba HAHAHA
+        <br><br>
+        ayun lang naman, wala kang kailangang gawin
+        sa information na 'to. have a nice day HAHAHAHAH
+    </p>
+
+</section>
+
+
+    </main>
+
+    <script>
+        function showMessage() {
+            const message = document.getElementById("message");
+            const button = document.getElementById("revealBtn");
+
+            message.style.display = "block";
+            button.classList.add("hidden");
+        }
+    </script>
+
+</body>
+</html>
